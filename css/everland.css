@@ -221,7 +221,12 @@ nav>ul>li>ul>li>a
 }
 #box02>div>ul>li
 {
-  padding: 10px;
+  padding: 5px;
+}
+#box02>div>ul>li>a
+{
+  font: bold 22px '나눔스퀘어_ac',sans-serif;
+  color: #000;
 }
 /* btn */
 #box02 .button
@@ -383,10 +388,22 @@ nav>ul>li>ul>li>a
   background-color: #E09F25;
   width: 172px; height: 64px;
 }
+.smart>ul>li:nth-child(3)>a
+{
+  padding-top: 12px;
+}
+.smart>ul>li:nth-child(5)>a
+{
+  padding-top: 12px;
+  text-align: right;
+}
 .smart>ul>li>a
 {
   color: #fff;
   float: right;
+  padding-top: 22px;
+  padding-right: 11px;
+  font: bold 18px '나눔스퀘어_ac',sans-serif;
 }
 .smart>.smart-box
 {
@@ -408,26 +425,95 @@ nav>ul>li>ul>li>a
 }
 .smart>.smart-box>a:nth-child(1)
 {
+  /* width: 172px; */
   background: url(/icon/car.png) no-repeat left;
   background-size: 42px;
-  width: 172px;
-  /* border: 1px solid #E09F25; */
 }
 .smart>.smart-box>a:nth-child(2)
 {
+  /* width: 172px; */
   background: url(/icon/map.png) no-repeat left;
   background-size: 42px;
-  width: 172px;
-  margin-left: 5px;
 }
 /* box04 */
-
+#box04{}
+#box04>div{}
+#box04>div>h3
+{
+  text-align: center;
+  font: bold 40px '나눔스퀘어_ac',sans-serif;
+  padding-top: 50px;
+}
+#box04>div>h3>i
+{
+  font: bold 20px '나눔스퀘어_ac',sans-serif;
+  color: #929292;
+}
 /* box05 */
 
 /* box06 */
 
 /* aside01 */
-
+aside
+{
+  background-color: #929292;
+  height: 50px;
+}
+aside>div
+{
+  width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+aside>div>.sns
+{
+  /* background-color: #fff; */
+}
+aside>div>.sns>ul
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+aside>div>.sns>ul>li
+{
+  padding-top: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: url(/icon/insta2.png) no-repeat center;
+  background-size: 25px;
+  text-indent: -9999%;
+}
+aside>div>.sns>ul>li:nth-child(2)
+{
+  background: url(/icon/facebook2.png) no-repeat center;
+  background-size: 25px;
+}
+aside>div>.sns>ul>li:nth-child(3)
+{
+  background: url(/icon/youtube2.png) no-repeat center;
+  background-size: 25px;
+}
+aside>div>.sns>ul>li:nth-child(4)
+{
+  background: url(/icon/twitter2.png) no-repeat center;
+  background-size: 25px;
+}
+aside>div>a
+{
+  width: 91px;
+  height: 50px;
+  background-color: #737373;
+}
+aside>div>a>p
+{
+  font: bold 20px '나눔스퀘어_ac',sans-serif;
+  color: #fff;
+  text-align: center;
+  padding-top: 15px;
+}
 /* aside02 */
 .qv
 {
