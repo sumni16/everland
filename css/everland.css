@@ -38,7 +38,10 @@ header>h1>a>span:nth-child(7){color: #F1CE30;}
 /* nav */
 #nav
 {
-  width: auto;
+  position: absolute;
+  left: 0; top: 200px;
+  height: 42px;
+  width: 100%;
   background-color: #FFFAF3;
 }
 #nav:hover
@@ -71,7 +74,7 @@ nav>ul>li
 nav>ul>li>a
 {
   padding: 0 80px;
-  font: bold 24px '나눔스퀘어_ac',sans-serif;
+  font: bold 20px '나눔스퀘어_ac',sans-serif;
   color: #fff;
 }
 nav>ul>li>ul
@@ -91,7 +94,7 @@ nav>ul>li>ul>li
 }
 nav>ul>li>ul>li>a
 {
-  font: bold 22px '나눔스퀘어_ac',sans-serif;
+  font: 20px '나눔스퀘어_ac',sans-serif;
   color: #E09F25;
   background-color: #FFFAF3;
   text-align: center;
@@ -259,7 +262,7 @@ nav>ul>li>ul>li>a
 }
 #box03>div
 {
-  width: auto;
+  /* width: auto; */
   height: 607px;
 }
 #box03>div>h3
@@ -270,7 +273,7 @@ nav>ul>li>ul>li>a
 }
 #box03>div>h3>i
 {
-  font: bold 20px '나눔스퀘어_ac',sans-serif;
+  font: 20px '나눔스퀘어_ac',sans-serif;
   color: #929292;
 }
 #box03>div>div
@@ -280,6 +283,7 @@ nav>ul>li>ul>li>a
   justify-content: space-between;
   margin: auto;
 }
+/* today */
 .today
 {
   border: 1px solid #E09F25;
@@ -297,7 +301,7 @@ nav>ul>li>ul>li>a
 {
   font: bold 28px '나눔스퀘어_ac',sans-serif;
 }
-.today>h4>p
+.today>h4>span
 {
   font: bold 16px '나눔스퀘어_ac',sans-serif;
   color: #929292;
@@ -313,8 +317,7 @@ nav>ul>li>ul>li>a
   width: 183px; height: 126px;
   margin: auto;
   color: #929292;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: auto;
 }
 .today>.perfomance>ul>li
 {
@@ -326,78 +329,164 @@ nav>ul>li>ul>li>a
   float: left;
   width: 60px;
   padding-right: 14px;
-  font: bold 16px '나눔스퀘어_ac',sans-serif;
+  font: 16px '나눔스퀘어_ac',sans-serif;
 }
 .today>.perfomance>ul>li>span
 {
   float: left;
   width: 123px;
   text-align: left;
-  font: bold 16px '나눔스퀘어_ac',sans-serif;
+  font: 16px '나눔스퀘어_ac',sans-serif;
   line-height: 40px;
 }
 .today>.today-box
 {
-  font: bold 18px '나눔스퀘어_ac',sans-serif;
+  font: 18px '나눔스퀘어_ac',sans-serif;
   padding: 20px 0;
   display: flex;
   justify-content: space-evenly;
 }
 .today>.today-box>a
 {
-  width: 140px; height: 43px;
+  width: 140px; height: 28px;
   color: #fff;
+  text-align: center;
   border: 1px solid #fff;
   border-radius: 13px;
 }
 .today>.today-box>a:nth-child(1)
 {
   background-color: #F1CE30;
+  padding: 10px 0 5px;
 }
 .today>.today-box>a:nth-child(2)
 {
   background-color: #9FC238;
+  padding: 10px 0 5px;
 }
+/* smart */
 .smart
 {
   border: 1px solid #E09F25;
   background-color: #fff;
-  width: 350px; height: 302px;
+  width: auto; height: 305px;
   text-align: center;
 }
-.smart>h4
+.smart>div{}
+.smart>div>h4
 {
   color: #E09F25;
   padding-top: 36px;
   padding-bottom: 39px;
 }
-.smart>h4>strong
+.smart>div>h4>strong
 {
   font: bold 28px '나눔스퀘어_ac',sans-serif;
 }
-.smart>ul
+.smart>div>ul
 {
   display: flex;
   width: 346px; height: 196px;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: auto;
-}
-.smart>ul>li
-{
   background-color: #E09F25;
-  width: 172px; height: 64px;
 }
-.smart>ul>li:nth-child(3)>a
+.smart>div>ul>li
+{
+  width: 171px;
+  height: 64px;
+  background: url(/icon/03/ticket.png) no-repeat 10px;
+  background-size: 44px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.smart>div>ul>li:nth-child(2)
+{
+  background: url(/icon/03/year_ticket.png) no-repeat 10px;
+  background-size: 50px;
+}
+.smart>div>ul>li:nth-child(3)
+{
+  background: url(/icon/03/smart.png) no-repeat 10px;
+  background-size: 48px;
+}
+.smart>div>ul>li:nth-child(4)
+{
+  background: url(/icon/03/experience.png) no-repeat 12px;
+  background-size: 47px;
+}
+.smart>div>ul>li:nth-child(5)
+{
+  background: url(/icon/03/restaurant.png) no-repeat 13px;
+  background-size: 45px;
+}
+.smart>div>ul>li:nth-child(6)
+{
+  background: url(/icon/03/parking.png) no-repeat 13px;
+  background-size: 44px;
+}
+.smart>div>ul>li:hover
+{
+  background: url(/icon/03/ticket_cha.png) no-repeat 10px;
+  background-size: 44px;
+  background-color: #fff;
+  border: 1px solid #E09F25;
+}
+.smart>div>ul>li:nth-child(2):hover
+{
+  background: url(/icon/03/year_ticket_cha.png) no-repeat 10px;
+  background-size: 50px;
+  background-color: #fff;
+  border: 1px solid #E09F25;
+}
+.smart>div>ul>li:nth-child(3):hover
+{
+  background: url(/icon/03/smart_cha.png) no-repeat 10px;
+  background-size: 48px;
+  background-color: #fff;
+  border: 1px solid #E09F25;
+}
+.smart>div>ul>li:nth-child(4):hover
+{
+  background: url(/icon/03/experience_cha.png) no-repeat 13px;
+  background-size: 47px;
+  background-color: #fff;
+  border: 1px solid #E09F25;
+}
+.smart>div>ul>li:nth-child(5):hover
+{
+  background: url(/icon/03/restaurant_cha.png) no-repeat 13px;
+  background-size: 45px;
+  background-color: #fff;
+  border: 1px solid #E09F25;
+}
+.smart>div>ul>li:nth-child(6):hover
+{
+  background: url(/icon/03/parking_cha.png) no-repeat 13px;
+  background-size: 44px;
+  background-color: #fff;
+  border: 1px solid #E09F25;
+}
+.smart>div>ul>li:hover>a
+{
+  color: #E09F25;
+}
+.smart>div>ul>li:nth-child(3)>a
 {
   padding-top: 12px;
 }
-.smart>ul>li:nth-child(5)>a
+.smart>div>ul>li:nth-child(4)>a
 {
   padding-top: 12px;
   text-align: right;
 }
-.smart>ul>li>a
+.smart>div>ul>li:nth-child(5)>a
+{
+  padding-top: 12px;
+  text-align: right;
+}
+.smart>div>ul>li>a
 {
   color: #fff;
   float: right;
@@ -405,59 +494,260 @@ nav>ul>li>ul>li>a
   padding-right: 11px;
   font: bold 18px '나눔스퀘어_ac',sans-serif;
 }
-.smart>.smart-box
+/* smart-box */
+.smart-box{}
+.smart-box>dl
 {
   width: 350px; height: 69px;
-  text-align: right;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border-radius: 13px;
+  text-align: right;
   margin-top: 13px;
+  border-radius: 13px;
 }
-.smart>.smart-box>a
+.smart-box>dl>dt
 {
-  width: 172px; height: 69px;
+  width: 180px;
+  height: 44px;
   border: 1px solid #E09F25;
   border-radius: 13px;
   font: bold 18px '나눔스퀘어_ac',sans-serif;
+  padding: 15px 5px 10px 13px;
+  cursor: pointer;
+}
+.smart-box>dl>dt:nth-child(1)
+{
+  margin-right: 7px;
+  background: url(/icon/03/public_transportation.png) no-repeat 3px;
+  background-size: 44px;
+  background-color: #fff;
+}
+.smart-box>dl>dt:nth-child(1):hover
+{
+  background: url(/icon/03/public_transportation_cha1.png) no-repeat 3px;
+  background-size: 44px;
+  background-color: #E09F25;
+}
+.smart-box>dl>dt:nth-child(1):hover>a
+{
+  color: #fff;
+}
+.smart-box>dl>dt:nth-child(2)
+{
+  margin-left: 7px;
+  background: url(/icon/03/map.png) no-repeat 3px;
+  background-size: 44px;
+  background-color: #fff;
+}
+.smart-box>dl>dt:nth-child(2):hover
+{
+  background: url(/icon/03/map_cha1.png) no-repeat 3px;
+  background-size: 44px;
+  background-color: #E09F25;
+}
+.smart-box>dl>dt:nth-child(2):hover>a
+{
+  color: #fff;
+}
+.smart-box>dl>dt>a
+{
   color: #E09F25;
 }
-.smart>.smart-box>a:nth-child(1)
-{
-  /* width: 172px; */
-  background: url(/icon/car.png) no-repeat left;
-  background-size: 42px;
-}
-.smart>.smart-box>a:nth-child(2)
-{
-  /* width: 172px; */
-  background: url(/icon/map.png) no-repeat left;
-  background-size: 42px;
-}
+
 /* box04 */
-#box04{}
+#box04
+{
+  height: 546px;
+  padding-bottom: 48px;
+}
 #box04>div{}
 #box04>div>h3
 {
   text-align: center;
   font: bold 40px '나눔스퀘어_ac',sans-serif;
   padding-top: 50px;
+  padding-bottom: 60px;
 }
 #box04>div>h3>i
 {
-  font: bold 20px '나눔스퀘어_ac',sans-serif;
+  font: 20px '나눔스퀘어_ac',sans-serif;
   color: #929292;
 }
+#box04>div>.promotion{}
+#box04>div>.promotion>ul
+{
+  /* width: 1200px; */
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-bottom: 48px;
+}
+#box04>div>.promotion>ul>li
+{
+  width: 210px; height: 188px;
+  border: 1px solid #8B8B8B;
+  text-align: center;
+  padding-top: 22px;
+  background: url(/icon/04/shinhan_p.png) no-repeat center;
+}
+#box04>div>.promotion>ul>li:nth-child(2)
+{
+  background: url(/icon/04/creditcard_p.png) no-repeat center;
+}
+#box04>div>.promotion>ul>li:nth-child(3)
+{
+  background: url(/icon/04/KT_p.png) no-repeat center;
+}
+#box04>div>.promotion>ul>li:nth-child(4)
+{
+  background: url(/icon/04/kakaopay_p.png) no-repeat center;
+}
+#box04>div>.promotion>ul>li:nth-child(5)
+{
+  background: url(/icon/04/kiz_p.png) no-repeat center;
+}
+#box04>div>.promotion>ul>li>a>span
+{
+  color: #929292;
+  font: bold 20px '나눔스퀘어_ac',sans-serif;
+}
+#box04>div>.pluspromo
+{
+  width: 285px;
+  /* height: 68px; */
+  background-color: #F1CE30;
+  border-radius: 13px;
+  text-align: center;
+  padding: 20px 0;
+  margin: auto;
+  cursor: pointer;
+}
+#box04>div>.pluspromo>a
+{
+  color: #fff;
+  font: 20px '나눔스퀘어_ac',sans-serif;
+}
+
 /* box05 */
+#box05
+{
+  background: url(/image/web.jpg) no-repeat center;
+  width: 100%; height: 1284px;
+  overflow: hidden;
+}
+#box05>div>h3
+{
+  text-align: center;
+  font: bold 40px '나눔스퀘어_ac',sans-serif;
+  color: #fff;
+  padding-top: 68px;
+  padding-bottom: 60px;
+}
+#box05>div>h3>i
+{
+  font: 20px '나눔스퀘어_ac',sans-serif;
+  color: #fff;
+}
+#box05>div>.block
+{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+#box05>div>.block>li
+{
+  width: 200px; height: 40px;
+  background-color: #E3E3E3;
+  border: 1px solid #E3E3E3;
+  border-radius: 13px;
+  text-align: center;
+  padding: 20px 0 0 0 ;
+  margin-left: 49px;
+  cursor: pointer;
+  opacity: 100%;
+  box-shadow: none;
+}
+#box05>div>.block>li:hover
+{
+  background-color: #2D4F9E;
+  border: 1px solid #2D4F9E;
+}
+#box05>div>.block>li>a
+{
+  color: #fff;
+  font: bold 18px '나눔스퀘어_ac',sans-serif;
+}
+#box05>div>ul
+{
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#box05>div>ul>li
+{
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 1px 1px 10px #000;
+}
+#box05>div>ul>li>figure
+{
+  width: 530px;
+  height: 360px;
+  background: url(/image/더블락스핀.jpg) no-repeat -70px;
+}
 
 /* box06 */
+#box06
+{
+  background-color: #EEEEEE;
+  height: 587px;
+}
+#box06>div>h3
+{
+  text-align: center;
+  font: bold 40px '나눔스퀘어_ac',sans-serif;
+  color: #000;
+  padding-top: 68px;
+  padding-bottom: 60px;
+}
+#box06>div>h3>i
+{
+  font: 20px '나눔스퀘어_ac',sans-serif;
+  color: #92929292;
+}
+.everclip>ul
+{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.everclip>ul>li
+{
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  background: url(/icon/play.png) no-repeat center ;
+  background-size: 58px;
+  background-color: #494949;
+  cursor: pointer;
+}
+.everclip>ul>li>i
+{
+}
+.everclip>ul>li>i>span
+{
+}
 
 /* aside01 */
 aside
 {
-  background-color: #929292;
-  height: 50px;
+  background-color: #D9D9D9;
+  height: 46px;
 }
 aside>div
 {
@@ -474,45 +764,52 @@ aside>div>.sns
 aside>div>.sns>ul
 {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  width: 185px;
 }
 aside>div>.sns>ul>li
 {
-  padding-top: 25px;
-  padding-left: 5px;
+  width: 35px;
+  padding-top: 30px;
+  padding-left: 10px;
   padding-right: 5px;
   background: url(/icon/insta2.png) no-repeat center;
   background-size: 25px;
   text-indent: -9999%;
+  cursor: pointer;
 }
 aside>div>.sns>ul>li:nth-child(2)
 {
-  background: url(/icon/facebook2.png) no-repeat center;
+  background: url(/icon/facebook2.png) no-repeat 12px;
   background-size: 25px;
+  border-left: 1px solid #929292;
 }
 aside>div>.sns>ul>li:nth-child(3)
 {
-  background: url(/icon/youtube2.png) no-repeat center;
+  background: url(/icon/youtube2.png) no-repeat 12px;
   background-size: 25px;
+  border-left: 1px solid #929292;
 }
 aside>div>.sns>ul>li:nth-child(4)
 {
-  background: url(/icon/twitter2.png) no-repeat center;
+  background: url(/icon/twitter2.png) no-repeat 15px;
   background-size: 25px;
+  border-left: 1px solid #929292;
 }
 aside>div>a
 {
   width: 91px;
-  height: 50px;
+  height: 46px;
   background-color: #737373;
+  cursor: pointer;
 }
 aside>div>a>p
 {
   font: bold 20px '나눔스퀘어_ac',sans-serif;
   color: #fff;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 12px;
 }
 /* aside02 */
 .qv
@@ -537,9 +834,15 @@ aside>div>a>p
   
   margin-left: 12px;
 }
+.qv>div>ul>li:nth-child(4)>a
+{
+  padding-top: 15px;
+}
 .qv>div>ul>li:nth-child(5)>a
 {
   color: #E09F25;
+  width: 50px;
+  padding-top: 17px;
 }
 .qv>div>ul>li:hover
 {
@@ -553,8 +856,10 @@ aside>div>a>p
 {
   display: block;
   color: #fff;
-  font: bold 12px '나눔스퀘어_ac',sans-serif;
-  padding: 10px 0;
+  font: 14px '나눔스퀘어_ac',sans-serif;
+  width: 75px; height: 75px;
+  padding-top: 20px;
+  /* line-height: 75px; */
 }
 
 /* footer */
