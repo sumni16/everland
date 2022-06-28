@@ -590,6 +590,7 @@ nav>ul>li>ul>li>a
   text-align: center;
   padding-top: 22px;
   background: url(/icon/04/shinhan_p.png) no-repeat center;
+  cursor: pointer;
 }
 #box04>div>.promotion>ul>li:nth-child(2)
 {
@@ -651,53 +652,118 @@ nav>ul>li>ul>li>a
 }
 #box05>div>.block
 {
+  
+}
+#box05>div>.block>ul
+{
   display: flex;
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 70px;
 }
-#box05>div>.block>li
+#box05>div>.block>ul>li
 {
-  width: 200px; height: 40px;
+  width: 200px; height: 35px;
   background-color: #E3E3E3;
   border: 1px solid #E3E3E3;
   border-radius: 13px;
   text-align: center;
-  padding: 20px 0 0 0 ;
+  padding: 15px 0 0 0 ;
   margin-left: 49px;
   cursor: pointer;
   opacity: 100%;
   box-shadow: none;
 }
-#box05>div>.block>li:hover
+#box05>div>.block>ul>li:hover
 {
   background-color: #2D4F9E;
   border: 1px solid #2D4F9E;
 }
-#box05>div>.block>li>a
+#box05>div>.block>ul>li>a
 {
   color: #fff;
   font: bold 18px '나눔스퀘어_ac',sans-serif;
 }
 #box05>div>ul
 {
+  position: relative;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 1400px;
+  height: 763px;
+  overflow: hidden;
 }
 #box05>div>ul>li
 {
+  width: 400px;
+  height: 370px;
+  margin-right: 15px;
+  margin-bottom: 16px;
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 1px 1px 10px #000;
 }
-#box05>div>ul>li>figure
+#box05>div>ul>li:nth-child(1),#box05>div>ul>li:nth-child(6)
 {
-  width: 530px;
-  height: 360px;
-  background: url(/image/더블락스핀.jpg) no-repeat -70px;
+  width: 530px;  
 }
 
+#box05>div>ul>li>figure{}
+#box05>div>ul>li>figure>a
+{
+  display: block;
+}
+#box05>div>ul>li>figure>a>img
+{
+  position: relative;
+  width: 100%;
+  max-height: 264px;
+}
+#box05>div>ul>li>figure>a>figcaption
+{
+  position: relative;
+  padding: 15px;
+}
+#box05>div>ul>li>figure>a>figcaption>dl
+{
+  font: bold 22px '나눔스퀘어_ac',sans-serif;
+  color: #000;
+}
+#box05>div>ul>li>figure>a>figcaption>dl>dd
+{
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 25px;
+  color: #494949;
+}
+
+/* 더 많은 어트랙션보기 */
+#box05>div>.attplus
+{
+  margin-top: 70px;
+  text-align: center;
+}
+#box05>div>.attplus>a
+{
+  display: inline-block;
+  width: 250px;
+  height: 65px;
+  background-color: #fff;
+  border: 1px solid #2D4F9E;
+  border-radius: 13px;
+  font: bold 20px '나눔스퀘어_ac',sans-serif;
+  color: #2D4F9E;
+  line-height: 65px;
+  margin: auto 80px;
+  text-align: center;
+  cursor: pointer;
+}
+#box05>div>.attplus>a:nth-child(2)
+{
+  background-color: #2D4F9E;
+  color: #fff;
+}
 /* box06 */
 #box06
 {
@@ -871,6 +937,6 @@ footer
 }
 footer>small
 {
-  font: bold 18px '나눔스퀘어_ac',sans-serif;
+  font: bold 16px '나눔스퀘어_ac',sans-serif;
   color: #fff;
 }
