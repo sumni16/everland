@@ -1,0 +1,168 @@
+@charset "utf-8";
+@media screen and ( min-width: 1213px )
+{
+/* box01 */
+#box01>div>ul>li
+{
+  width: 100%;
+  height: 590px;
+  background: url(/image/event01.jpg) no-repeat center top;
+  margin: auto;
+}
+}
+@media screen and ( max-width:1212px ) and ( min-width:1025px )
+{
+/* nav */
+#nav
+{
+  margin: auto;
+}
+nav>ul>li>a
+{
+  padding: 0 55px;
+}
+nav>ul>li>ul>li
+{
+  margin-left: 60px;
+}
+/* box01 */
+#box01>div>ul>li
+{
+  width: 1212px;
+  height: 590px;
+  background: url(/image/event01.jpg) no-repeat center top;
+  margin: auto;
+}
+}
+@media screen and (max-width:1024px) and (min-width:580px)
+{
+/* header */
+header
+{
+  width: auto;
+  text-align: center;
+}
+/* nav */
+#nav
+{
+  margin: auto;
+}
+nav>ul>li>a
+{
+  padding: 0 50px;
+}
+nav>ul>li>ul>li
+{
+  margin-left: 55px;
+}
+/* box01 */
+#box01>div>ul>li
+{
+  width: 1024px;
+  height: 590px;
+  background: url(/image/event01.jpg) no-repeat center top;
+  margin: auto;
+}
+/* box02 */
+#box02
+{
+  height: 60px;
+}
+/* #box03 */
+#box03>div
+{
+  height: 631px;
+}
+#box03>div>h3
+{
+  padding-bottom: 70px;
+}
+/* box04 */
+#box04
+{
+  height: 855px;
+}
+#box04>div>h3
+{
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+#box04>div>.promotion>ul
+{
+  width: 660px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+#box04>div>.pluspromo
+{
+  margin-top: 65px;
+}
+/* box05 */
+#box05
+{
+  background: url(/image/table.jpg) no-repeat center;
+  width: auto; height: 1740px;
+  overflow: hidden;
+}
+#box05>div>.block>ul
+{
+  margin-right: 49px;
+}
+#box05>div>ul
+{
+  width: 900px;
+  height: 1130px;
+}
+#box05>div>ul>li
+{
+  width: 400px;
+  height: 360px;
+  margin-right: 15px;
+  margin-bottom: 16px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 1px 1px 10px #000;
+}
+#box05>div>ul>li:nth-child(1),#box05>div>ul>li:nth-child(6)
+{
+  width: 400px;
+}
+#box05>div>ul>li:nth-child(1),#box05>div>ul>li:nth-child(2)
+{
+  margin-top: 10px;
+}
+/* aside02 */
+.qv
+{
+  display: none;
+}
+}
+@media screen and (max-width:579px)
+{
+/* header */
+header
+{
+  height: 60px;
+}
+header>h1
+{
+  height: 60px;
+  padding: 13px;
+}
+header>h1>a>span
+{
+  font: bold 25px '나눔고딕스퀘어_ac',sans-serif;
+}
+/* nav */
+#nav
+{
+  display: none;
+}
+/* box01 */
+#box01>div>ul>li
+{
+  width: 579px;
+  height: 590px;
+  background: url(/image/event01.jpg) no-repeat center top;
+  margin: auto;
+}
+}
